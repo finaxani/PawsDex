@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawsDex - Sistema de Adopción</title>
+    
+    <!-- Favicon de Huellita -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+
+    <!-- Fuentes Modern Gamer (Rajdhani) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- HEADER / MENU -->
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🐾</span>
+            <h1>PAWS<span>DEX</span></h1>
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#mascotas">MASCOTAS</a></li>
+                <li><a href="#resenas">RESEÑAS</a></li>
+                <li><a href="#contacto">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <span class="hero-badge">SISTEMA DE ADOPCIÓN GAMER</span>
+                <h2>DESBLOQUEA A TU NUEVO COMPAÑERO</h2>
+                <p>Encontrá a tu compañero de aventuras y dale un nuevo hogar hoy mismo.</p>
+                <a href="#mascotas" class="btn-primary">EXPLORAR REGISTRO</a>
+            </div>
+        </section>
+
+        <!-- SECCIÓN MASCOTAS (FLEXBOX) -->
+        <section id="mascotas" class="section">
+            <div class="section-header">
+                <h2>REGISTRO DE COMPAÑEROS</h2>
+                <p>Selecciona una ficha para ver detalles de adopción</p>
+            </div>
+
+            <div class="cards-container">
+                
+                <article class="card-companion">
+                    <div class="card-badge">N° 001</div>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400" alt="Max">
+                        <span class="type-tag">ELÉCTRICO / JUGUETÓN</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>MAX</h3>
+                        <div class="stats-bar">
+                            <span>EDAD: 2 Años</span>
+                            <span>ENERGÍA: 100%</span>
+                        </div>
+                        <p class="desc">Muy amigable, entrenado para paseo y excelente convivencia con chicos.</p>
+                        <button class="btn-card">SELECCIONAR</button>
+                    </div>
+                </article>
+
+                <article class="card-companion">
+                    <div class="card-badge">N° 002</div>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400" alt="Luna">
+                        <span class="type-tag">SIGILOSO / TRANQUILO</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>LUNA</h3>
+                        <div class="stats-bar">
+                            <span>EDAD: 1 Año</span>
+                            <span>ENERGÍA: 85%</span>
+                        </div>
+                        <p class="desc">Gata súper cariñosa, acostumbrada a departamento y espacios reducidos.</p>
+                        <button class="btn-card">SELECCIONAR</button>
+                    </div>
+                </article>
+
+                <article class="card-companion">
+                    <div class="card-badge">N° 003</div>
+                    <div class="card-img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1537151625747-768eb6cf92b2?w=400" alt="Rocky">
+                        <span class="type-tag">LEAL / EXPLORADOR</span>
+                    </div>
+                    <div class="card-body">
+                        <h3>ROCKY</h3>
+                        <div class="stats-bar">
+                            <span>EDAD: 3 Años</span>
+                            <span>ENERGÍA: 95%</span>
+                        </div>
+                        <p class="desc">Perro con alta resistencia física, ideal para familias que disfrutan salir.</p>
+                        <button class="btn-card">SELECCIONAR</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SECCIÓN RESEÑAS Y MULTIMEDIA (GRID) -->
+        <section id="resenas" class="section bg-alt">
+            <div class="section-header">
+                <h2>LOGROS Y TESTIMONIOS</h2>
+                <p>Historias de adopciones concretadas con éxito</p>
+            </div>
+            
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-user">
+                        <span class="user-avatar">L</span>
+                        <div>
+                            <h4>Laura G.</h4>
+                            <span class="user-title">Adoptante de Milo</span>
+                        </div>
+                    </div>
+                    <p>"El proceso fue muy fluido. Milo se adaptó perfectamente a mi departamento desde el primer día."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-user">
+                        <span class="user-avatar">C</span>
+                        <div>
+                            <h4>Carlos M.</h4>
+                            <span class="user-title">Adoptante de Rocky</span>
+                        </div>
+                    </div>
+                    <p>"Excelente atención de todo el equipo de PawsDex. Súper transparentes con los cuidados de la mascota."</p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-user">
+                        <span class="user-avatar">S</span>
+                        <div>
+                            <h4>Sofía R.</h4>
+                            <span class="user-title">Adoptante de Luna</span>
+                        </div>
+                    </div>
+                    <p>"Luna completó nuestra familia. Recomiendo totalmente sumarse a la adopción responsable."</p>
+                </div>
+            </div>
+
+            <!-- MULTIMEDIA -->
+            <div class="multimedia-container">
+                <h3>CONOCÉ NUESTRO CENTRO DE ADOPCIÓN</h3>
+                <div class="iframe-wrapper">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Centro PawsDex" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CONTACTO -->
+        <section id="contacto" class="section">
+            <div class="section-header">
+                <h2>FORMULARIO DE ADOPCIÓN</h2>
+                <p>Completá tus datos para iniciar la solicitud</p>
+            </div>
+
+            <form action="https://formspree.io/f/mvkglrrr" method="POST" class="contact-form">
+                <div class="form-group">
+                    <label for="nombre">NOMBRE Y APELLIDO:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">CORREO ELECTRÓNICO:</label>
+                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="mensaje">MASCOTA DE INTERÉS Y CONSULTA:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Indicá la mascota que te interesa y contanos sobre tu hogar..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary btn-full">ENVIAR SOLICITUD</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 PawsDex. Plataforma de Adopción Responsable de Mascotas.</p>
+    </footer>
+
+</body>
+</html>
